@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.float-left {
+    float:left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-gray {
+    background-color: gray;
+}
+
+body {
+    background-color: #b91450;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+h2 {
+    color: white;
+    padding: 40px 0;
+}
+
+.genera-biglietto {
+    background-color: white;
+    padding: 25px 150px;
+    border-radius: 10px;
+}
+
+.ticket-option {
+    width: calc(100% / 3);
+}
+
+.user-input {
+    display: block;
+    margin: auto;
+}
+
+.cta {
+    width: 103px;
+    margin: auto;
+}
+
+.mostra-biglietto {
+    background-color: white;
+    padding: 20px;
+}
+
+.ticket-info {
+    display: flex;
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.info-box {
+    flex-basis: calc(100% / 5);
+}
+

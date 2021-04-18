@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Biglietto treno Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2 class="text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+    
+    <!-- primo blocco -->
+    <div class="genera-biglietto container clearfix">
+        <!-- INPUT UTENTE -->
+        <form action="" id="myForm">
+            <div class="float-left ticket-option">
+                <p class="text-center">Nome Cognome</p>
+                <input class="user-input" type="text" name="name">
+            </div>
+
+            <div class="float-left ticket-option">
+                <p class="text-center">Km da percorrere</p>
+                <input class="user-input" type="text" name="distanza">
+            </div>
+
+            <div class="float-left ticket-option">
+                <p class="text-center">Fascia d'età</p>
+                <select class="user-input" name="age">
+                    <option value="20%">Minorenne</option>
+                    <option value="Nessuna">18-64 anni</option>
+                    <option value="40%">over 65</option>
+                </select>
+            </div>
+
+            <!-- BOTTONI -->
+            <div class="cta">
+                <button>Genera</button>
+                <button id="resetForm">Annulla</button>
+            </div>
+        </form>
+    </div>
+
+    <h2 class="text-center">IL TUO BIGLIETTO</h2>
+    <!-- secondo blocco -->
+    <div class="mostra-biglietto container">
+        <h3>DETTAGLIO PASSEGGERI</h3>
+        <div class="ticket-info">
+            <div class="bg-gray info-box">
+                <h4>NOME PASSEGGERO</h4>
+                <strong><span id="nomeViaggiatore"></span></strong>
+            </div>
+
+            <div class="info-box">
+                <h4>Offerta</h4>
+                <span id="offerta"></span>
+            </div>
+
+            <div class="info-box">
+                <h4>Carrozza</h4>
+                <span id="numeroCarrozza"></span>
+            </div>
+
+            <div class="info-box">
+                <h4>Codice CP</h4>
+                <span id="codiceTreno"></span>
+            </div>
+
+            <div class="info-box">
+                <h4>Costo biglietto</h4>
+                <span id="prezzoBiglietto"></span><span>€</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
