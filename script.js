@@ -51,7 +51,7 @@ myForm.addEventListener("submit", function (event) {
     
     var prezzoFinaleBiglietto = prezzoBiglietto.toFixed(2);
 
-    prezzoBigliettoElement.innerHTML = prezzoFinaleBiglietto
+    prezzoBigliettoElement.innerHTML = prezzoFinaleBiglietto + " €"
 
     function generaNumeroCarrozza() {
         return Math.floor(Math.random() * 12) + 1;
